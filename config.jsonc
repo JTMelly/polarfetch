@@ -34,7 +34,7 @@
         "break",
         {
             "type": "custom",
-            "format": "{#white}┌{$1}{$1} Polar Fetch {$1}{$1}┐{#}"
+            "format": "{#white}┌{$1}{$1} polarfetch {$1}{$1}┐{#}"
         },
         {
             "key": "CPU",
@@ -119,7 +119,7 @@
         },
         {
             "type": "custom",
-            "format": "{#white}└{$1}{$1}─{$1}{$1}{$1}┘{#}"
+            "format": "{#white}└{$1}{$1}{$1}{$1}{$1}┘{#}"
         }
     ]
 }
