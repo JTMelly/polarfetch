@@ -1,0 +1,125 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+    "logo": {
+        "type": "file",
+        "source": "~/.config/fastfetch/antarctica.txt",
+        //"source": "~/.config/fastfetch/corbassiere.txt",
+        //"source": "~/.config/fastfetch/svalbard.txt",
+        "padding": {
+            "top": 1,
+            "left": 0,
+            "right": 3,
+            "bottom": 0
+        }
+    },
+    "display": {
+        "separator": "   ",
+        "size": { "binaryPrefix": "jedec" },
+        "color": {
+            "keys": "#7F7D87",
+            "title": "#02526A",
+            "output": "#fbf1c7",
+            "separator": "#7F7D87"
+        },
+        "constants": [
+            "────────────"
+        ],
+        "key": {
+            "width": 10
+        }
+    },
+    "modules": [
+        "break",
+        "break",
+        "break",
+        {
+            "type": "custom",
+            "format": "{#white}┌{$1}{$1} Polar Fetch {$1}{$1}┐{#}"
+        },
+        {
+            "key": "CPU",
+            "type": "cpu",
+            "showPeCoreCount": true,
+            "keyColor": "#02526A"
+        },
+        {
+            "key": "GPU",
+            "type": "gpu",
+            "keyColor": "#02526A"
+        },
+		{
+			"type": "custom",
+			"format": "                             \u001b[1m\u001b[37m \u001b[1m\u001b[37m \u001b[1m\u001b[37m"
+		},
+        {
+            "key": "Disk",
+            "type": "disk",
+            "folders": "/",
+            "keyColor": "#037984",
+            "percent": {
+                "green": 50,
+                "yellow": 80,
+                "type": 3
+                }
+        },
+        {
+            "key": "Disk",
+            "type": "disk",
+            "folders": "/home",
+            "keyColor": "#037984",
+            "percent": {
+                "green": 50,
+                "yellow": 80,
+                "type": 3
+                }
+        },
+        {
+            "key": "Memory",
+            "type": "memory",
+            "keyColor": "#037984",
+            "percent": {
+                "green": 50,
+                "yellow": 80,
+                "type": 3
+                }
+        },
+        {
+            "key": "Swap",
+            "type": "swap",
+            "keyColor": "#037984",
+            "percent": {
+                "green": 50,
+                "yellow": 80,
+                "type": 3
+                }
+        },
+		{
+			"type": "custom",
+			"format": "                             \u001b[1m\u001b[37m \u001b[1m\u001b[37m \u001b[1m\u001b[37m"
+		},
+        {
+            "key": "OS",
+            "type": "os",
+            "keyColor": "#7a959a"
+        },
+        {
+            "key": "Kernel",
+            "type": "kernel",
+            "keyColor": "#7a959a"
+        },
+        {
+            "key": "Terminal",
+            "type": "terminal",
+            "keyColor": "#7a959a"
+        },
+        {
+            "key": "Shell",
+            "type": "shell",
+            "keyColor": "#7a959a"
+        },
+        {
+            "type": "custom",
+            "format": "{#white}└{$1}{$1}─{$1}{$1}{$1}┘{#}"
+        }
+    ]
+}
